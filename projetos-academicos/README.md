@@ -4,7 +4,7 @@ Nesta pasta, organizo os trabalhos desenvolvidos durante a minha formação e os
 
 ## 📄 Currículo e Documentação
 Aqui você pode encontrar o meu currículo atualizado com as minhas competências e experiências.
-*   [👉 Visualizar meu Currículo (PDF)](curriculo-marcelo-pessoa.pdf)
+*   [👉 Visualizar meu Currículo (PDF)](curriculo-de-marcelo-pessoa.pdf)
 
 ## 🗄️ Projeto de Banco de Dados (MySQL)
 Projeto prático desenvolvido utilizando o **MySQL Workbench**. 
