@@ -13,6 +13,7 @@ Projeto prático desenvolvido utilizando o **MySQL Workbench**.
 
 ## 🌐 Portfólio Web (Google Sites)
 Para uma visualização mais interativa do meu trabalho, desenvolvi um site completo.
-<meta http-equiv="refresh" content="0; url=[COLA_AQUI_O_LINK_DO_TEU_GOOGLE_SITES](https://sites.google.com/d/1QnChPxzQkaG0XyfapDZQKC-naRjoT2V1/p/1MCS9wVh6IQ3Qx9fuBQhcIp-wjjUlWiLy/edit)">
+* [🔗 Clique aqui para aceder ao meu Google Sites]([https://google.com](https://sites.google.com/view/portifliodemarcelopessoa/in%C3%ADcio))
+* * [🔗 Clique aqui para abrir meu Portfólio Oficial](https://github.io)
 ---
 *Estes projetos fazem parte do meu percurso na UniCEUB.*
