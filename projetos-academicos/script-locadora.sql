@@ -1,0 +1,112 @@
+CREATE DATABASE IF NOT EXISTS LOCADORA;
+
+USE LOCADORA;
+
+CREATE TABLE IF NOT EXISTS CARROS
+(
+IDCARRO INT AUTO_INCREMENT NOT NULL,
+MODELO VARCHAR(50),
+MARCA VARCHAR(30),
+ANO INT NOT NULL,
+COR VARCHAR(20),
+PLACA VARCHAR(10),
+VALOR_DIARIA DECIMAL(10,2),
+PRIMARY KEY (IDCARRO)
+);
+
+CREATE TABLE IF NOT EXISTS CLIENTES
+(
+IDCLIENTE INT AUTO_INCREMENT NOT NULL,
+NOMECOMLETO VARCHAR(100),
+CPF VARCHAR(14) NOT NULL,
+EMAIL VARCHAR(50) NOT NULL,
+TELEFONE VARCHAR(20),
+DATANASCIMENTO DATE NOT NULL,
+PRIMARY KEY (IDCLIENTE)
+);
+
+SELECT * FROM LOCADORA.CARROS;
+INSERT INTO LOCADORA.CARROS (MODELO, MARCA, ANO, COR, PLACA, VALOR_DIARIA) VALUES
+('Gol', 'Volkswagen', 2022, 'Branco', 'ABC-1234', 120.00),
+('Uno', 'Fiat', 2021, 'Prata', 'ABC-1235', 110.00),
+('Palio', 'Fiat', 2020, 'Preto', 'ABC-1236', 105.00),
+('Onix', 'Chevrolet', 2023, 'Azul', 'ABC-1237', 140.00),
+('Ka', 'Ford', 2019, 'Vermelho', 'ABC-1238', 115.00),
+('HB20', 'Hyundai', 2022, 'Cinza', 'ABC-1239', 135.00),
+('Corolla', 'Toyota', 2024, 'Branco', 'ABC-1240', 250.00),
+('Civic', 'Honda', 2023, 'Preto', 'ABC-1241', 260.00),
+('Fit', 'Honda', 2021, 'Prata', 'ABC-1242', 160.00),
+('Renegade', 'Jeep', 2023, 'Verde', 'ABC-1243', 220.00),
+('Compass', 'Jeep', 2024, 'Preto', 'ABC-1244', 300.00),
+('T-Cross', 'Volkswagen', 2022, 'Cinza', 'ABC-1245', 210.00),
+('Cronos', 'Fiat', 2023, 'Branco', 'ABC-1246', 150.00),
+('Argo', 'Fiat', 2022, 'Vermelho', 'ABC-1247', 130.00),
+('Sandero', 'Renault', 2020, 'Azul', 'ABC-1248', 110.00),
+('Kwid', 'Renault', 2023, 'Branco', 'ABC-1249', 95.00),
+('Tracker', 'Chevrolet', 2024, 'Prata', 'ABC-1250', 230.00),
+('Creta', 'Hyundai', 2023, 'Preto', 'ABC-1251', 225.00),
+('Yaris', 'Toyota', 2022, 'Cinza', 'ABC-1252', 170.00),
+('Polo', 'Volkswagen', 2023, 'Azul', 'ABC-1253', 155.00),
+('Fastback', 'Fiat', 2024, 'Cinza', 'ABC-1254', 280.00),
+('Pulse', 'Fiat', 2023, 'Vermelho', 'ABC-1255', 190.00),
+('Captur', 'Renault', 2021, 'Branco', 'ABC-1256', 180.00),
+('Versa', 'Nissan', 2022, 'Prata', 'ABC-1257', 165.00),
+('Kicks', 'Nissan', 2023, 'Preto', 'ABC-1258', 200.00),
+('Sentra', 'Nissan', 2024, 'Branco', 'ABC-1259', 240.00),
+('HR-V', 'Honda', 2023, 'Azul', 'ABC-1260', 255.00),
+('Taos', 'Volkswagen', 2024, 'Cinza', 'ABC-1261', 290.00),
+('Tucson', 'Hyundai', 2022, 'Preto', 'ABC-1262', 215.00),
+('City', 'Honda', 2023, 'Branco', 'ABC-1263', 185.00);
+
+SELECT * FROM LOCADORA.CLIENTES;
+INSERT INTO CLIENTES (NOMECOMLETO, CPF, EMAIL, TELEFONE, DATANASCIMENTO) VALUES
+('João Silva', '111.111.111-01', 'joao@email.com', '11999990001', '1990-05-15'),
+('Maria Oliveira', '222.222.222-02', 'maria@email.com', '11999990002', '1985-08-20'),
+('Pedro Santos', '333.333.333-03', 'pedro@email.com', '11999990003', '1992-12-10'),
+('Ana Costa', '444.444.444-04', 'ana@email.com', '11999990004', '1995-03-25'),
+('Lucas Pereira', '555.555.555-05', 'lucas@email.com', '11999990005', '1988-07-30'),
+('Beatriz Lima', '666.666.666-06', 'beatriz@email.com', '11999990006', '1998-11-05'),
+('Carlos Souza', '777.777.777-07', 'carlos@email.com', '11999990007', '1980-01-12'),
+('Juliana Alves', '888.888.888-08', 'juliana@email.com', '11999990008', '1993-09-18'),
+('Ricardo Rocha', '999.999.999-09', 'ricardo@email.com', '11999990009', '1975-04-22'),
+('Fernanda Dias', '101.010.101-10', 'fernanda@email.com', '11999990010', '1991-06-14'),
+('Gustavo Mendes', '111.222.333-11', 'gustavo@email.com', '11999990011', '1987-02-28'),
+('Camila Souza', '222.333.444-12', 'camila@email.com', '11999990012', '1994-10-05'),
+('Thiago Melo', '333.444.555-13', 'thiago@email.com', '11999990013', '1989-12-25'),
+('Larissa Farias', '444.555.666-14', 'larissa@email.com', '11999990014', '1996-04-10'),
+('Felipe Barros', '555.666.777-15', 'felipe@email.com', '11999990015', '1993-08-07'),
+('Patrícia Nunes', '666.777.888-16', 'patricia@email.com', '11999990016', '1982-11-20'),
+('Daniel Costa', '777.888.999-17', 'daniel@email.com', '11999990017', '1990-01-30'),
+('Mariana Vieira', '888.999.000-18', 'mariana@email.com', '11999990018', '1997-05-12'),
+('Roberto Santos', '999.000.111-19', 'roberto@email.com', '11999990019', '1984-09-03'),
+('Amanda Silva', '121.212.121-20', 'amanda@email.com', '11999990020', '1995-07-22'),
+('Marcos Silva', '131.313.131-21', 'marcos@email.com', '11999990021', '1988-12-15'),
+('Eliane Souza', '141.414.141-22', 'eliane@email.com', '11999990022', '1992-03-09'),
+('Bruno Oliveira', '151.515.151-23', 'bruno@email.com', '11999990023', '1991-10-18'),
+('Carla Mendes', '161.616.161-24', 'carla@email.com', '11999990024', '1986-06-25'),
+('Eduardo Lima', '171.717.171-25', 'eduardo@email.com', '11999990025', '1994-02-14'),
+('Vanessa Alves', '181.818.181-26', 'vanessa@email.com', '11999990026', '1990-08-30'),
+('Rafael Rocha', '191.919.191-27', 'rafael@email.com', '11999990027', '1983-04-12'),
+('Simone Dias', '202.020.202-28', 'simone@email.com', '11999990028', '1995-11-05'),
+('Vinicius Melo', '212.121.212-29', 'vinicius@email.com', '11999990029', '1989-09-20'),
+('Natália Farias', '222.222.222-30', 'natalia@email.com', '11999990030', '1996-01-10'),
+('Alexandre Barros', '232.323.232-31', 'alexandre@email.com', '11999990031', '1987-05-25'),
+('Débora Nunes', '242.424.424-32', 'debora@email.com', '11999990032', '1993-07-15'),
+('Henrique Costa', '252.525.252-33', 'henrique@email.com', '11999990033', '1992-12-01'),
+('Renata Vieira', '262.626.262-34', 'renata@email.com', '11999990034', '1997-03-18'),
+('Leandro Santos', '272.727.272-35', 'leandro@email.com', '11999990035', '1985-08-22'),
+('Jéssica Silva', '282.828.282-36', 'jessica@email.com', '11999990036', '1994-10-30'),
+('Fábio Souza', '292.929.292-37', 'fabio@email.com', '11999990037', '1981-06-12'),
+('Julio Oliveira', '303.030.303-38', 'julio@email.com', '11999990038', '1990-09-05'),
+('Priscila Mendes', '313.131.313-39', 'priscila@email.com', '11999990039', '1988-02-14'),
+('Marcelo Lima', '323.232.323-40', 'marcelo@email.com', '11999990040', '1992-11-20'),
+('Bianca Alves', '333.333.333-41', 'bianca@email.com', '11999990041', '1996-04-28'),
+('Tiago Rocha', '343.434.343-42', 'tiago@email.com', '11999990042', '1984-07-10'),
+('Sandra Dias', '353.535.353-43', 'sandra@email.com', '11999990043', '1991-12-05'),
+('Paulo Melo', '363.636.363-44', 'paulo@email.com', '11999990044', '1995-03-22'),
+('Tatiane Farias', '373.737.373-45', 'tatiane@email.com', '11999990045', '1990-08-15'),
+('Ricardo Barros', '383.838.383-46', 'ricardo@email.com', '11999990046', '1983-05-30'),
+('Lívia Nunes', '393.939.393-47', 'livia@email.com', '11999990047', '1994-01-12'),
+('Fernando Costa', '404.040.404-48', 'fernando@email.com', '11999990048', '1989-09-08'),
+('Elisa Vieira', '414.141.414-49', 'elisa@email.com', '11999990049', '1997-06-25'),
+('Diego Santos', '424.242.424-50', 'diego@email.com', '11999990050', '1986-11-18');
