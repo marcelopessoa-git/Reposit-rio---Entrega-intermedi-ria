@@ -20,5 +20,5 @@ Atualmente, estou frequentando o curso de:
 ## 🌐 Contato Profissional
 Sinta-te à vontade para se ligar a mim no LinkedIn para conversarmos sobre tecnologia e oportunidades!
 
-[![LinkedIn](https://shields.io)]([https://linkedin.com](https://www.linkedin.com/in/marcelo-pessoa-454170402/))
+[![LinkedIn](https://shields.io)](https://www.linkedin.com/in/marcelo-pessoa-454170402/)
 
